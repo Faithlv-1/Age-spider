@@ -14,7 +14,7 @@ import D2wnloader
 class AgeGetUrl:
     def __init__(self,url,path):
         ch_opthions=Options()
-        # ch_opthions.add_argument("--headless")
+        ch_opthions.add_argument("--headless")
         self.driver = webdriver.Chrome(options=ch_opthions)
         self.driver.set_page_load_timeout(10)  # 页面加载超时时间
         self.driver.set_script_timeout(10)
