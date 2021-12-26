@@ -40,7 +40,7 @@ class AgeGetUrl:
                     url_dict={}
                     url_dict['url']=url
                     url_dict['filename']=filename
-                    #如果不是是备份的视频才加入
+                    #如果不是是用的视频才加入
                     if(filename.find("备用")==-1):
                         Chapter_Urls.append(url_dict)
                 return Chapter_Urls
@@ -115,7 +115,7 @@ class AgeGetUrl:
 if __name__ == '__main__':
     #下载多个动漫
     urlist=[
-        'http://www.agefans.top/acg/66196/',
+        '',
         'http://www.agefans.top/mov/16961/'
     ]
     #保存的文件路径,空为当前工作路径 格式为 C:\Users\Faith\Desktop\FileRecv 即保存在FileRecv中
