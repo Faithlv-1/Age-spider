@@ -115,11 +115,11 @@ class AgeGetUrl:
 if __name__ == '__main__':
     #下载多个动漫
     urlist=[
-        '',
-        'http://www.agefans.top/mov/16961/'
+       '具体url'
+     
     ]
-    #保存的文件路径,空为当前工作路径 格式为 C:\Users\Faith\Desktop\FileRecv 即保存在FileRecv中
-    path='D:\Animate\看'
+    #保存的文件路径,若空为当前工作路径 格式为 C:\Users\Desktop\FileRecv 即保存在FileRecv中
+    path=''
     for i in urlist:
         down = AgeGetUrl(i,path)
         down.run()
